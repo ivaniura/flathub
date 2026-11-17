@@ -1,0 +1,34 @@
+app-id: com.accordionapp.player
+runtime: org.gnome.Platform
+runtime-version: '51'
+sdk: org.gnome.Sdk
+command: accordion-player
+finish-args:
+  - --share=ipc
+  - --share=network
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --socket=pulseaudio
+  - --device=dri
+modules:
+  - name: accordion-player
+    buildsystem: simple
+    sources:
+      - type: file
+        url: https://accordion-app.com/downloads/0.1.0/accordion-player_0.1.0_amd64.deb
+        sha256: 92a1ccdfa3b0fb29a6caef63e3d3b417f10495f30fc847e72d8a40fb2e7536c1
+        dest-filename: app.deb
+        only-arches: [x86_64]
+      - type: file
+        path: com.accordionapp.player.desktop
+      - type: file
+        path: com.accordionapp.player.metainfo.xml
+      - type: file
+        path: com.accordionapp.player.png
+    build-commands:
+      - ar -x app.deb
+      - tar -xf data.tar.*
+      - install -Dm755 usr/bin/accordion-player /app/bin/accordion-player
+      - install -Dm644 com.accordionapp.player.desktop /app/share/applications/com.accordionapp.player.desktop
+      - install -Dm644 com.accordionapp.player.metainfo.xml /app/share/metainfo/com.accordionapp.player.metainfo.xml
+      - install -Dm644 com.accordionapp.player.png /app/share/icons/hicolor/512x512/apps/com.accordionapp.player.png

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.accordionapp.player</id>
+  <name>Accordion Player</name>
+  <summary>Free player for button and piano accordion with fingering</summary>
+  <developer id="com.accordionapp">
+    <name>Andrii Ivaniura</name>
+  </developer>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LicenseRef-proprietary</project_license>
+  <description>
+    <p>Accordion Player shows you exactly what to press. Open a piece and watch both hands on the instrument: the right-hand buttons or piano keys, the left-hand basses and chords, and the finger number for every note. At the same time you hear the piece as it should sound.</p>
+    <p>The player is free. It needs no account and has no limits: playback, all instruments, practice tools, full screen and video recording are free forever.</p>
+    <p>What you can do:</p>
+    <ul>
+      <li>See the right and left hand on a button accordion (B-griff and other layouts) or a piano accordion</li>
+      <li>Follow the finger numbers, note names or chord types on every button</li>
+      <li>Read the notes on the staff or watch falling notes in lanes</li>
+      <li>Change the tempo, loop a passage, use the metronome and a count-in, mute a hand</li>
+      <li>Enlarge any part of the instrument to see small buttons clearly</li>
+      <li>Record a Full HD video of your practice with sound</li>
+      <li>Use the interface in English or Ukrainian</li>
+    </ul>
+    <p>Accordion Player opens .accplay files. Make them yourself in Accordion Editor, or open the demo pieces that come with the app. Your files and settings stay on your device.</p>
+  </description>
+  <launchable type="desktop-id">com.accordionapp.player.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source" width="1920" height="1080">https://accordion-app.com/downloads/screenshots/player-1-instrument.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source" width="1920" height="1080">https://accordion-app.com/downloads/screenshots/player-2-fingers.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source" width="1920" height="1080">https://accordion-app.com/downloads/screenshots/player-3-settings.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source" width="1920" height="1080">https://accordion-app.com/downloads/screenshots/player-4-piano.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://accordion-app.com</url>
+  <url type="help">https://accordion-app.com/docs-player</url>
+  <url type="contact">https://accordion-app.com/contact</url>
+  <content_rating type="oars-1.1"/>
+  <categories>
+    <category>AudioVideo</category>
+    <category>Audio</category>
+    <category>Music</category>
+  </categories>
+  <provides>
+    <binary>accordion-player</binary>
+  </provides>
+  <releases>
+    <release version="0.1.0" date="2026-11-17">
+      <description>
+        <p>First release.</p>
+      </description>
+    </release>
+  </releases>
+</component>

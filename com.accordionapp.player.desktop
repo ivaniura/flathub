@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Accordion Player
+Comment[uk]=Безкоштовний плеєр для баяна й акордеона з аплікатурою
+Comment=Free player for button and piano accordion with fingering
+Exec=accordion-player
+Icon=com.accordionapp.player
+Terminal=false
+Categories=AudioVideo;Audio;Music;
+Keywords=accordion;bayan;music;notes;fingering;
+StartupWMClass=accordion-player
